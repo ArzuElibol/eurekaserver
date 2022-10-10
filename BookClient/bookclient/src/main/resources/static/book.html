@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<b>
+<h2>Kitap Listesi</h2>
+-------------------------------------
+
+<div th:each="book : ${result}">
+    <p th:text="${book.name}" />
+    <p th:text="${book.date}" />
+    <p th:text="${book.yazar}" />
+    -------------------------------------
+</div>
+</b>
+
+</body>
+</html>
